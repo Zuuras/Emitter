@@ -2,6 +2,9 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 frontend/node_modules
+node_modules
+target
+*.css
 
 # User-specific stuff
 .idea/
