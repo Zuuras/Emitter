@@ -20,6 +20,7 @@
     - mvn clean test
     - npm run build --prefix ./frontend/
     - sonar-scanner
+    - mvn clean test jacoco:report coveralls:report
 
 
     addons:
