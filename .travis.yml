@@ -13,6 +13,7 @@
  before_script:
    - npm install --prefix
 
+
  script:
     - mvn clean test
     - npm run build --prefix
