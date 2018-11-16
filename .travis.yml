@@ -11,9 +11,9 @@
      - ./frontend/node_modules/
 
  before_script:
-   - npm install --prefix ../Emitter/
+   - npm install --prefix ./frontend/
 
 
  script:
     - mvn clean test
-    - npm run build --prefix ../Emitter/
+    - npm run build --prefix ./frontend/
