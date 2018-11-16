@@ -1,29 +1,29 @@
- dist: trusty
+dist: trusty
 
- language: java
+language: java
 
- jdk:
-   - oraclejdk8
+jdk:
+  - oraclejdk8
 
- cache:
-   directories:
-     - $HOME/.m2
-     - ./frontend/node_modules/
-     - $HOME/.sonar
-     - $HOME/.sonarscanner
+cache:
+  directories:
+    - $HOME/.m2
+    - ./frontend/node_modules/
+    - $HOME/.sonar
+    - $HOME/.sonarscanner
 
- before_script:
-   - npm install --prefix ./frontend/
-
-
- script:
-    - mvn clean test
-    - npm run build --prefix ./frontend/
-    - sonar-scanner
-    - mvn clean test jacoco:report coveralls:report
+before_script:
+  - npm install --prefix ./frontend/
 
 
-    addons:
-      sonarcloud:
-        organization: zuuras-github
-        token: 6726fb8b0d3eeaf6e55ac1bf26b88a4c2b25e308
+script:
+  - mvn clean test
+  - npm run build --prefix ./frontend/
+  - sonar-scanner
+  - mvn clean test jacoco:report coveralls:report
+
+
+addons:
+  sonarcloud:
+    organization: zuuras-github
+    token: 6726fb8b0d3eeaf6e55ac1bf26b88a4c2b25e308
