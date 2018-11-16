@@ -21,6 +21,7 @@
     - npm run build --prefix ./frontend/
     - sonar-scanner
 
+
     addons:
       sonarcloud:
         organization: zuuras-github
