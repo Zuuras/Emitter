@@ -16,4 +16,4 @@
 
  script:
     - mvn clean test
-    - npm run build --prefix ../Emitter/frontend/
+    - npm run build --prefix ../Emitter/
