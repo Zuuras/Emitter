@@ -9,6 +9,8 @@
    directories:
      - $HOME/.m2
      - ./frontend/node_modules/
+     - $HOME/.sonar
+     - $HOME/.sonarscanner
 
  before_script:
    - npm install --prefix ./frontend/
@@ -17,3 +19,9 @@
  script:
     - mvn clean test
     - npm run build --prefix ./frontend/
+    - sonar-scanner
+
+    addons:
+      sonarcloud:
+        organization: zuuras-github
+        token: 6726fb8b0d3eeaf6e55ac1bf26b88a4c2b25e308
