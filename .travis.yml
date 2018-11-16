@@ -11,8 +11,8 @@
      - ./frontend/node_modules/
 
  before_script:
-   - npm install --prefix frontend/
+   - npm install --prefix ./frontend/
 
  script:
     - mvn clean test
-    - npm run build --prefix frontend/
+    - npm run build --prefix ./frontend/
