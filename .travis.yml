@@ -19,8 +19,8 @@ before_script:
 script:
   - mvn clean test
   - npm run build --prefix ./frontend/
-  - sonar-scanner
   - mvn clean test jacoco:report coveralls:report
+#  - sonar-scanner
 
 
 addons:
