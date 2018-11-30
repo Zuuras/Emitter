@@ -6,12 +6,25 @@ class Header extends Component{
 
         return(<div className="main-header">
                 <div className="logo-head" >
-                    <a href="http://localhost:3000/" >Emitter_98</a>
+                    <a href="http://localhost:3000/" >Emitter_98
+                    </a>
+
                     <div className="btn favorites">
                     </div>
+
                     <div className="btn notifications">
                     </div>
+
                     <div className="btn messages">
+                    </div>
+
+                    <div className="search">
+                      <div className="search-icon">
+                      </div>
+
+                      <input  className="search-input" placeholder="Back to the future...">
+                      </input>
+
                     </div>
                 </div>
                 <div className="welcome">
