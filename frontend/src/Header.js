@@ -6,6 +6,7 @@ class Header extends Component{
 
         return(<div className="main-header">
                 <div className="logo-head" >
+                  <div className="wrap">
                     <a href="http://localhost:3000/" >Emitter_98
                     </a>
 
@@ -24,7 +25,12 @@ class Header extends Component{
 
                       <input  className="search-input" placeholder="Back to the future...">
                       </input>
-
+                    </div>
+                    </div>
+                  <p className="phrase">&#9993; Luke i am your father ! &#9993;</p>
+                    <div className="btn profile">
+                        <p>OldMan228</p>
+                        <div className="profile-img"/>
                     </div>
                 </div>
                 <div className="welcome">
