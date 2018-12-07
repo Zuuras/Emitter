@@ -1,3 +1,4 @@
+
 package com.emitter.backend.entity;
 
 
@@ -52,4 +53,7 @@ public class User {
 
     @Column(name = "usergender")
     private String userGender;
+
+    @Column(name = "userbirth")
+    private String  dateOfBirth;
 }
