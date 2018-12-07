@@ -18,7 +18,6 @@ public class User {
     @Column(name = "username")
     private String userName;
 
-
     @Column(name = "usersurname")
     private String userSurname;
 
@@ -56,4 +55,6 @@ public class User {
 
     @Column(name = "userbirth")
     private String  dateOfBirth;
+
+
 }
