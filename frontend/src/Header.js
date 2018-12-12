@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import './Header.scss'
+import {openMessages} from './components/Messages/Messages'
 
 class Header extends Component{
     render(){
@@ -16,7 +17,7 @@ class Header extends Component{
                     <div className="btn notifications">
                     </div>
 
-                    <div className="btn messages">
+                    <div className="btn messages" onClick={openMessages}>
                     </div>
 
                     <div className="search">
@@ -27,15 +28,15 @@ class Header extends Component{
                       </input>
                     </div>
                     </div>
-                  <p className="phrase">&#9993; Luke i am your father ! &#9993;</p>
+                  <p className="phrase">&#9993; Luke I am your father ! &#9993;</p>
                     <div className="btn profile">
                         <p>OldMan228</p>
                         <div className="profile-img"/>
                     </div>
                 </div>
-                <div className="welcome">
-                    Welcome to the 1998
-                </div>
+                {/*<div className="welcome">*/}
+                    {/*Welcome to the 1998*/}
+                {/*</div>*/}
             <audio id="sound-link" preload="auto">
                 <source src="audio/click.mp3" type="audio/mpeg"/>
 

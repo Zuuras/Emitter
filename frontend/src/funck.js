@@ -1,4 +1,3 @@
-
 function click()
 {
 
