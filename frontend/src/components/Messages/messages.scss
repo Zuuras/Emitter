@@ -1,6 +1,6 @@
 .container {
-  position: absolute;
   display: none;
+  position: absolute;
   width: 500px;
   height: 500px;
   background-color: white;
@@ -15,10 +15,11 @@
 
 .message {
   display: flex;
-  border: 1px solid black;
-  justify-content: space-between;
   align-items: center;
-  &_avatar{
+  justify-content: space-between;
+  border: 1px solid black;
+
+  &_avatar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
