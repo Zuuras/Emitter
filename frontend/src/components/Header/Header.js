@@ -1,9 +1,11 @@
 import React, {Component} from 'react'
 import './Header.scss'
-import {openMessages} from './components/Messages/Messages'
+import { connect } from 'react-redux'
+
 
 class Header extends Component{
     render(){
+        console.log('Header', this.props);
 
         return(<div className="main-header">
                 <div className="logo-head" >
@@ -17,7 +19,8 @@ class Header extends Component{
                     <div className="btn notifications">
                     </div>
 
-                    <div className="btn messages" onClick={openMessages}>
+                    <div className="btn messages" onClick={
+                        () => this.props.dispatch({type: 'SHOW_MESSAGES'})}>
                     </div>
 
                     <div className="search">
@@ -50,4 +53,4 @@ class Header extends Component{
     }
 
 }
-export default Header;
+export default connect()(Header);

@@ -1,8 +1,8 @@
-.container {
-  display: none;
+.message-container {
+  display: block;
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 530px;
+  height: 50%;
   background-color: white;
   text-align: center;
 }
@@ -16,8 +16,8 @@
 .message {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  border: 1px solid black;
+  justify-content: space-around;
+  border: 3px solid black;
 
   &_avatar {
     width: 50px;
