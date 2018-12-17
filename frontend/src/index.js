@@ -10,13 +10,13 @@ import reducer from './reducers/reducer'
 
 const store = createStore(reducer);
 
-ReactDOM.render((
+ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
             <App/>
         </BrowserRouter>
     </Provider>
-), document.getElementById('head'));
+, document.getElementById('head'));
 
 
 serviceWorker.unregister();

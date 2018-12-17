@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 
 class Header extends Component{
     render(){
-        console.log('Header', this.props);
+        console.log('Header', this);
 
         return(<div className="main-header">
                 <div className="logo-head" >
@@ -19,8 +19,7 @@ class Header extends Component{
                     <div className="btn notifications">
                     </div>
 
-                    <div className="btn messages" onClick={
-                        () => this.props.dispatch({type: 'SHOW_MESSAGES'})}>
+                    <div className="btn messages" onClick={this.props.toggle}>
                     </div>
 
                     <div className="search">

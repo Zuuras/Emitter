@@ -2,23 +2,28 @@ import React, {Component} from 'react';
 import './App.scss';
 import Header from "./components/Header/Header";
 import Messages from "./components/Messages/Messages";
-import {connect} from "react-redux";
 
 
 class App extends Component {
+    state = {
+        showed: false
+    }
+
+    showedToggle = () => {
+        this.setState({
+            showed: !this.state.showed
+        })
+    }
     render() {
-        console.log('App', this.state);
-        var state = {
-            showed: this.props.showedMessage
-        }
+        // console.log('App', this.props);
         return (
 
             <div className="App">
-                <Header/>
-                {state.showed && <Messages/>}
+                <Header toggle={this.showedToggle} />
+                {this.state.showed && <Messages />}
             </div>
         );
     }
 }
 
-export default connect()(App);
+export default (App);

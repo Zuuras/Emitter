@@ -3,9 +3,6 @@ import './messages.scss'
 import { connect } from "react-redux";
 
 
-// export function openMessages() {
-//     document.getElementById('messages').style.display = "block";
-// }
 
 class Messages extends Component {
     render() {
