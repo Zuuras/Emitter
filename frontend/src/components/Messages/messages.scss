@@ -1,6 +1,10 @@
-.message-container {
+.messages-container {
   display: block;
   position: absolute;
+  height: 100%;
+}
+
+.message-container {
   width: 530px;
   height: 50%;
   background-color: white;
@@ -13,12 +17,25 @@
   text-align: center;
 }
 
+.message-btn {
+  width: 99%;
+  border: 3px solid whitesmoke;
+  border-radius: 1px;
+  border-right-color: black;
+  border-bottom-color: black;
+}
+
+.message-btn:active {
+  border: 3px solid black;
+  border-right-color: whitesmoke;
+  border-bottom-color: whitesmoke;
+}
+
 .message {
-  background-color: #009294;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: 3px solid black;
+  background-color: #009294;
 
   &_avatar {
     width: 50px;
@@ -29,7 +46,50 @@
   }
 
   &_text-post {
+    padding: 0 10px;
+    border: 3px solid black;
+    border-right-color: whitesmoke;
+    border-bottom-color: whitesmoke;
     background-color: white;
-    border: 1px solid;
+  }
+}
+
+.chat-container {
+  display: block;
+  width: 529px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: #009294;
+}
+
+.chat {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  &_input {
+    width: 50%;
+    height: 59px;
+    border: 3px solid black;
+    border-right-color: whitesmoke;
+    border-bottom-color: whitesmoke;
+    background-size: 100%;
+  }
+
+  &_send-button {
+    //display: inline-block;
+    width: 100px;
+    height: 59px;
+    border: 3px solid whitesmoke;
+    border-radius: 1px;
+    border-right-color: black;
+    border-bottom-color: black;
+  }
+
+  &_send-button:active {
+    //display: inline-block;
+    border: 3px solid black;
+    border-right-color: whitesmoke;
+    border-bottom-color: whitesmoke;
   }
 }
