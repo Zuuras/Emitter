@@ -41,7 +41,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: url("../../icons/oldman.jpg") no-repeat center;
+    background: url("../../icons/people_avatar_head_jack_sparrow_captain_pirate-512.png") no-repeat center;
     background-size: 100%;
   }
 
@@ -51,45 +51,5 @@
     border-right-color: whitesmoke;
     border-bottom-color: whitesmoke;
     background-color: white;
-  }
-}
-
-.chat-container {
-  display: block;
-  width: 529px;
-  height: 200px;
-  border: 1px solid black;
-  background-color: #009294;
-}
-
-.chat {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-
-  &_input {
-    width: 50%;
-    height: 59px;
-    border: 3px solid black;
-    border-right-color: whitesmoke;
-    border-bottom-color: whitesmoke;
-    background-size: 100%;
-  }
-
-  &_send-button {
-    //display: inline-block;
-    width: 100px;
-    height: 59px;
-    border: 3px solid whitesmoke;
-    border-radius: 1px;
-    border-right-color: black;
-    border-bottom-color: black;
-  }
-
-  &_send-button:active {
-    //display: inline-block;
-    border: 3px solid black;
-    border-right-color: whitesmoke;
-    border-bottom-color: whitesmoke;
   }
 }
