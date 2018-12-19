@@ -1,10 +1,22 @@
 import React, {Component} from 'react'
 import './Header.scss'
+import MessagesModal from './MessagesModal.js';
 
 class Header extends Component{
+    constructor(props) {
+        super(props);
+        this.state ={ isMessagesModalOpen: false};
+    }
+    openMessagesModal = () => {
+        this.setState({
+            isMessagesModalOpen: !this.state.isMessagesModalOpen
+        })
+    }
+
     render(){
 
-        return(<div className="main-header">
+        return(
+            <div className="main-header">
                 <div className="logo-head" >
                   <div className="wrap">
                     <a href="http://localhost:3000/" >Emitter_98
@@ -13,10 +25,11 @@ class Header extends Component{
                     <div className="btn favorites">
                     </div>
 
-                    <div className="btn notifications">
+                    <div className="btn notifications" >
+
                     </div>
 
-                    <div className="btn messages">
+                    <div className="btn messages" onClick={this.openMessagesModal}>
                     </div>
 
                     <div className="search">
@@ -40,11 +53,10 @@ class Header extends Component{
                 <source src="audio/click.mp3" type="audio/mpeg"/>
 
             </audio>
-
+                <MessagesModal page="default" show={this.state.isMessagesModalOpen} onClose={this.openMessagesModal}></MessagesModal>
             </div>
 
         );
-
 
     }
 

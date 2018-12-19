@@ -1,0 +1,79 @@
+.messages-modal__overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+  padding: 50px;
+}
+.messages-modal__modal {
+  max-width: 500px;
+  min-height: 300px;
+  margin: 0 auto;
+
+  background: #bfbfbf;
+  border: 1px solid #dfdfdf;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  box-shadow: 1px 1px 0 0 #000;
+}
+
+.messages-modal__modal--button {
+  background: #bfbfbf;
+  border: 1px solid #dfdfdf;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  box-shadow: 1px 1px 0 0 #000;
+  cursor: pointer;
+}
+
+.messages-modal__modal--header {
+  margin: 2px 2px 0;
+  padding: 1px 2px;
+  color: #fff;
+  background: -webkit-linear-gradient(left, #000080, #1084d0);
+  background: linear-gradient(to right, #000080, #1084d0);
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 16px;
+  position: relative;
+}
+
+.messages-modal__modal--header-buttons {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.messages-modal__modal--header-button {
+  float: left;
+  vertical-align: text-top;
+  font-weight: bold;
+  line-height: 12px;
+  height: 14px;
+
+
+  color: #070707;
+  font-size: 11px;
+  font-family: Tahoma, Verdana;
+  color: #070707;
+  text-align: center;
+  padding: 0 3px;
+  outline: none;
+}
+
+.messages-modal__modal--close-button {
+
+}
+.messages-modal__modal--message-button {
+
+}
+
+.messages-modal__modal--mark-all-as-read {
+
+}
+
+.messages-modal__modal--body {
+  padding: 5px;
+}
