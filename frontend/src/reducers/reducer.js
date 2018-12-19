@@ -8,7 +8,7 @@ function store(state = initialState, action) {
             return{...state, showedMessage: !state.showedMessage}
         default: return state
 
-    };
+    }
 }
 
 export default store
