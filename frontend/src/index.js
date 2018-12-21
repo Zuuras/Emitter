@@ -4,7 +4,19 @@ import './index.scss';
 import Header from './Header';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Header />, document.getElementById('head'));
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+import routes from './routes';
+import LoginPage from "./LoginPage";
+
+
+ReactDOM.render(
+    routes,
+    document.getElementById('head')
+);
+
+
+//ReactDOM.render(<Header />, document.getElementById('head'));
 
 
 // If you want your app to work offline and load faster, you can change
