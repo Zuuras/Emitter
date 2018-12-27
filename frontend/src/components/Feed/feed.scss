@@ -1,0 +1,33 @@
+.feed {
+  &_container {
+    display: flex;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+  }
+
+  &_data {
+    display: flex;
+  }
+
+  &_user {
+    &-avatar {
+      width: 100px;
+      height: 100px;
+      background-image: url('../../icons/oldman.jpg');
+      background-size: cover;
+      border-radius: 50%;
+    }
+
+    &-name {
+      font-size: 30px;
+      color: blueviolet;
+
+    }
+
+    &-time {
+
+    }
+  }
+}
