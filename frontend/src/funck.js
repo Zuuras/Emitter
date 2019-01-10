@@ -1,6 +1,4 @@
-
-function click()
-{
+function click() {
 
     var soundLink = $("#sound-link")[0];
 
