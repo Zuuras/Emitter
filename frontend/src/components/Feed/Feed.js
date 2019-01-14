@@ -8,18 +8,16 @@ class Feed extends Component {
         return (
             <div className="feed_container">
                 <div className="feed_data">
-                    <div className="feed_user-avatar"></div>
+                    <div className="feed_user-avatar"/>
                     <div className="feed_user-name">@OldMan228</div>
-                    <div className="feed_user-time"></div>
+                    <div className="feed_user-time">XX.XX.XXXX</div>
                 </div>
-                <div className="feed_post"></div>
+                <div className="feed_post">
+                </div>
                 <div className="feed_back">
-                    <div className="feed_back_left">
-                        <div className="feed_like"></div>
-                        <div className="feed_remit"></div>
-                        <div className="feed_comment"></div>
-                    </div>
-                    <div className="feed_send"></div>
+                        <div className="feed_back-like"/>
+                        <div className="feed_back-remit"/>
+                        <div className="feed_back-comment"/>
                 </div>
             </div>
         )

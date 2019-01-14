@@ -1,33 +1,60 @@
 .feed {
   &_container {
-    display: flex;
     width: 800px;
-    height: 400px;
-    margin: 0 auto;
+    height: 1005px;
+    margin: 20px auto 0;
+    border: 4px solid black;
+    border-bottom: none;
     background-color: whitesmoke;
   }
 
   &_data {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 
   &_user {
     &-avatar {
       width: 100px;
       height: 100px;
+      border-radius: 50%;
       background-image: url('../../icons/oldman.jpg');
       background-size: cover;
-      border-radius: 50%;
     }
 
     &-name {
-      font-size: 30px;
       color: blueviolet;
-
+      font-size: 30px;
     }
 
     &-time {
+      font-size: 30px;
+    }
+  }
 
+  &_back {
+    display: flex;
+
+    &-like {
+      width: 30px;
+      height: 30px;
+      background-image: url('../../icons/error.png');
+      background-size: cover;
+    }
+
+    &-remit {
+      width: 30px;
+      height: 30px;
+      background-image: url('../../icons/remit.png');
+      background-size: cover;
+    }
+
+    &-comment {
+      width: 30px;
+      height: 30px;
+      background-image: url('../../icons/comment.png');
+      background-size: cover;
     }
   }
 }

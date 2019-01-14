@@ -22,6 +22,8 @@ class App extends Component {
                 <Header toggle={this.showedToggle} />
                 {this.state.showed && <Messages />}
                 <Feed/>
+
+
             </div>
         );
     }
