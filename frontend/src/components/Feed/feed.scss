@@ -1,25 +1,37 @@
 .feed {
   &_container {
     width: 800px;
-    height: 1005px;
+    height: 800px;
     margin: 20px auto 0;
     border: 4px solid black;
-    border-bottom: none;
-    background-color: whitesmoke;
+    background-color: #009294;
+    overflow: auto;
   }
 
   &_data {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 10px;
+    border: 3px solid;
+    background-color: whitesmoke;
+  }
+
+  &_post {
+    margin: 10px;
+    border: 3px solid black;
+    border-right: white;
+    border-bottom: white;
+    background-color: whitesmoke;
   }
 
   &_user {
     &-avatar {
-      width: 100px;
-      height: 100px;
+      width: 50px;
+      height: 50px;
+      //border: 2px solid;
       border-radius: 50%;
-      background-image: url('../../icons/oldman.jpg');
+      background-image: url('../../icons/pirate.png');
       background-size: cover;
     }
 
@@ -29,17 +41,21 @@
     }
 
     &-time {
-      font-size: 30px;
+      font-size: 20px;
     }
   }
 
   &_back {
     display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    border: 3px solid;
+    background-color: whitesmoke;
 
     &-like {
       width: 30px;
       height: 30px;
-      background-image: url('../../icons/error.png');
+      background-image: url('../../icons/like-512.png');
       background-size: cover;
     }
 
