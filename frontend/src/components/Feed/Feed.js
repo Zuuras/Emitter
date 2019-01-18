@@ -20,9 +20,6 @@ class Feed extends Component {
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus facilis mollitia
                         nulla, officia porro reprehenderit vero. Blanditiis consequuntur, cum, dignissimos dolor harum
                         iure iusto libero perspiciatis, reiciendis unde velit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus facilis mollitia
-                        nulla, officia porro reprehenderit vero. Blanditiis consequuntur, cum, dignissimos dolor harum
-                        iure iusto libero perspiciatis, reiciendis unde velit.
                     </div>
                     <div className="feed_back">
                         <div className="feed_back-like"/>
