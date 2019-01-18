@@ -1,9 +1,6 @@
-
 package com.emitter.backend.entity;
 
-
 import lombok.Data;
-
 import javax.persistence.*;
 
 @Entity
