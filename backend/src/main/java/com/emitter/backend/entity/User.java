@@ -14,47 +14,52 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Column(name = "userAvatar")
+    private String userAvatar;
 
     @Column(name = "username")
     private String userName;
+
+    @Column(name = "usernick")
+    private String userNickName;
 
     @Column(name = "usersurname")
     private String userSurname;
 
 
-    @Column(name = "userlogin")
-    private String userLogin;
+//    @Column(name = "userlogin")
+//    private String userLogin;
 
 
     @Column(name = "userpassword")
     private String userPassword;
 
 
-    @Column(name = "userrole")
-    private String userRole;
+//    @Column(name = "userrole")
+//    private String userRole;
 
 
-    @Column(name = "useradress")
-    private String userAdress;
+//    @Column(name = "useradress")
+//    private String userAdress;
 
 
-    @Column(name = "userphone")
-    private String userPhone;
+//    @Column(name = "userphone")
+//    private String userPhone;
 
 
-    @Column(name = "usermail")
-    private String userMail;
+//    @Column(name = "usermail")
+//    private String userMail;
 
 
-    @Column(name = "userphoto")
-    private String userPhoto;
+//    @Column(name = "userphoto")
+//    private String userPhoto;
 
+//
+//    @Column(name = "usergender")
+//    private String userGender;
 
-    @Column(name = "usergender")
-    private String userGender;
-
-    @Column(name = "userbirth")
-    private String  dateOfBirth;
+//    @Column(name = "userbirth")
+//    private String  dateOfBirth;
 
 
 }
