@@ -16,7 +16,7 @@ class Header extends Component{
                     <div className="btn favorites">
                     </div>
 
-                    <div className="btn notifications">
+                    <div className="btn notifications" onClick={this.props.notif}>
                     </div>
 
                     <div className="btn messages" onClick={this.props.toggle}>
