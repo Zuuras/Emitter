@@ -31,7 +31,7 @@ class Header extends Component{
                     </div>
                     </div>
                   <p className="phrase">&#9993; Luke I am your father ! &#9993;</p>
-                    <div className="btn profile">
+                    <div className="btn profile" onClick={this.props.openProfile}>
                         <p>OldMan228</p>
                         <div className="profile-img"/>
                     </div>

@@ -1,4 +1,40 @@
-.troll {
-  display: flex;
+.profile {
+  &-container {
+    //display: flex;
+    width: 500px;
+    height: 800px;
+    float: right;
+    //position: absolute;
+    background-color: whitesmoke;
+  }
+
+  &_avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("../../icons/oldman.jpg");
+    background-size: cover;
+  }
+
+  &_settings {
+    width: 50px;
+  }
+
+  &_new {
+
+    &-post {
+      width: 50px;
+    }
+
+    &-quote {
+      width: 50px;
+    }
+  }
 }
+
+.exit {
+  width: 50px;
+}
+
+
 
