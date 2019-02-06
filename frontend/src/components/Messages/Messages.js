@@ -6,11 +6,14 @@ import Chat from './Chat/Chat'
 
 class Messages extends Component {
     state = {
+
+        showed: false,
         showedChat: false
     }
 
     ShowedToggle = () => {
         this.setState({
+            showed: !this.state.showed,
             showedChat: !this.state.showedChat
         })
     }
@@ -25,6 +28,8 @@ class Messages extends Component {
                     </div>
                     <p className="main-text">There is no oldfags yet...</p>
                 </div>
+
+                {this.state.showed && <Chat/>}
                 {this.state.showedChat && <Chat/>}
             </div>
         )
