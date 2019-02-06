@@ -1,40 +1,50 @@
 .profile {
   &-container {
-    //display: flex;
-    width: 500px;
-    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100%;
     float: right;
-    //position: absolute;
     background-color: whitesmoke;
   }
 
   &_avatar {
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-image: url("../../icons/oldman.jpg");
     background-size: cover;
   }
 
   &_settings {
-    width: 50px;
+    width: 100%;
+    border: 1px solid black;
+    background-color: #009294;
   }
 
-  &_new {
+  &_wall {
+    width: 100%;
+    border: 1px solid black;
+    background-color: #009294;
+  }
 
-    &-post {
-      width: 50px;
-    }
+  &_new-post {
+    width: 100%;
+    border: 1px solid black;
+    background-color: #009294;
+  }
 
-    &-quote {
-      width: 50px;
-    }
+  &_new-quote {
+    width: 100%;
+    border: 1px solid black;
+    background-color: #009294;
   }
 }
 
 .exit {
-  width: 50px;
+  width: 100%;
+  border: 1px solid black;
+  background-color: red;
 }
-
-
-

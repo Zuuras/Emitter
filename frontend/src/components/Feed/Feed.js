@@ -5,16 +5,17 @@ import {connect} from "react-redux";
 
 class Feed extends Component {
     state = {
-    likes: 14,
-    remits:15,
-    commits:2
-}
+        likes: 14,
+        remits: 15,
+        commits: 2,
+        isVisibleFeed: true
+    };
 
-clickForLike = () => {
+    clickForLike = () => {
         this.setState({
             likes: this.state.likes + 1
         });
-}
+    };
 //
 // clickForDislike = () => {
 //         this.setState({
@@ -25,9 +26,21 @@ clickForLike = () => {
 // clickForDislike = () => {
 //         if() this.clickForLike
 // }
+
+    switchVision = () => {
+        this.setState({
+            isVisibleFeed: true
+        })
+    }
+
+
     render() {
         return (
             <div className="feed_container">
+                <div className="feed_buttons">
+                    <div className="feed_favor active">Fav</div>
+                    <div className="feed_btn">Feed</div>
+                </div>
                 <div className="feed_body">
                     <div className="feed_data">
                         <div className="feed_user-avatar"/>
@@ -43,9 +56,12 @@ clickForLike = () => {
                         iure iusto libero perspiciatis, reiciendis unde velit.
                     </div>
                     <div className="feed_back">
-                        <div className="feed_back-like" id="like" onClick={this.clickForLike}/>{this.state.likes}
-                        <div className="feed_back-remit"/><span id={this.remits}/>{this.state.remits}
-                        <div className="feed_back-comment"/><span id={this.commits}/>{this.state.commits}
+                        <div className="feed_back-like" id="like" onClick={this.clickForLike}/>
+                        {this.state.likes}
+                        <div className="feed_back-remit"/>
+                        <span id={this.remits}/>{this.state.remits}
+                        <div className="feed_back-comment"/>
+                        <span id={this.commits}/>{this.state.commits}
                     </div>
                 </div>
                 <div className="feed_body">
@@ -63,9 +79,12 @@ clickForLike = () => {
                         iure iusto libero perspiciatis, reiciendis unde velit.
                     </div>
                     <div className="feed_back">
-                        <div className="feed_back-like" id="like" onClick={this.clickForLike}/>{this.state.likes}
-                        <div className="feed_back-remit"/><span id={this.remits}/>{this.state.remits}
-                        <div className="feed_back-comment"/><span id={this.commits}/>{this.state.commits}
+                        <div className="feed_back-like" id="like" onClick={this.clickForLike}/>
+                        {this.state.likes}
+                        <div className="feed_back-remit"/>
+                        <span id={this.remits}/>{this.state.remits}
+                        <div className="feed_back-comment"/>
+                        <span id={this.commits}/>{this.state.commits}
                     </div>
                 </div>
                 <div className="feed_body">
@@ -83,9 +102,12 @@ clickForLike = () => {
                         iure iusto libero perspiciatis, reiciendis unde velit.
                     </div>
                     <div className="feed_back">
-                        <div className="feed_back-like" id="like" onClick={this.clickForLike}/>{this.state.likes}
-                        <div className="feed_back-remit"/><span id={this.remits}/>{this.state.remits}
-                        <div className="feed_back-comment"/><span id={this.commits}/>{this.state.commits}
+                        <div className="feed_back-like" id="like" onClick={this.clickForLike}/>
+                        {this.state.likes}
+                        <div className="feed_back-remit"/>
+                        <span id={this.remits}/>{this.state.remits}
+                        <div className="feed_back-comment"/>
+                        <span id={this.commits}/>{this.state.commits}
                     </div>
                 </div>
                 <div className="feed_body">
@@ -103,9 +125,12 @@ clickForLike = () => {
                         iure iusto libero perspiciatis, reiciendis unde velit.
                     </div>
                     <div className="feed_back">
-                        <div className="feed_back-like" id="like" onClick={this.clickForLike}/>{this.state.likes}
-                        <div className="feed_back-remit"/><span id={this.remits}/>{this.state.remits}
-                        <div className="feed_back-comment"/><span id={this.commits}/>{this.state.commits}
+                        <div className="feed_back-like" id="like" onClick={this.clickForLike}/>
+                        {this.state.likes}
+                        <div className="feed_back-remit"/>
+                        <span id={this.remits}/>{this.state.remits}
+                        <div className="feed_back-comment"/>
+                        <span id={this.commits}/>{this.state.commits}
                     </div>
                 </div>
                 <div className="feed_body">
@@ -123,9 +148,12 @@ clickForLike = () => {
                         iure iusto libero perspiciatis, reiciendis unde velit.
                     </div>
                     <div className="feed_back">
-                        <div className="feed_back-like" id="like" onClick={this.clickForLike}/>{this.state.likes}
-                        <div className="feed_back-remit"/><span id={this.remits}/>{this.state.remits}
-                        <div className="feed_back-comment"/><span id={this.commits}/>{this.state.commits}
+                        <div className="feed_back-like" id="like" onClick={this.clickForLike}/>
+                        {this.state.likes}
+                        <div className="feed_back-remit"/>
+                        <span id={this.remits}/>{this.state.remits}
+                        <div className="feed_back-comment"/>
+                        <span id={this.commits}/>{this.state.commits}
                     </div>
                 </div>
                 <div className="feed_body">
@@ -143,9 +171,12 @@ clickForLike = () => {
                         iure iusto libero perspiciatis, reiciendis unde velit.
                     </div>
                     <div className="feed_back">
-                        <div className="feed_back-like" id="like" onClick={this.clickForLike}/>{this.state.likes}
-                        <div className="feed_back-remit"/><span id={this.remits}/>{this.state.remits}
-                        <div className="feed_back-comment"/><span id={this.commits}/>{this.state.commits}
+                        <div className="feed_back-like" id="like" onClick={this.clickForLike}/>
+                        {this.state.likes}
+                        <div className="feed_back-remit"/>
+                        <span id={this.remits}/>{this.state.remits}
+                        <div className="feed_back-comment"/>
+                        <span id={this.commits}/>{this.state.commits}
                     </div>
                 </div>
                 <div className="feed_body">
@@ -163,9 +194,12 @@ clickForLike = () => {
                         iure iusto libero perspiciatis, reiciendis unde velit.
                     </div>
                     <div className="feed_back">
-                        <div className="feed_back-like" id="like" onClick={this.clickForLike}/>{this.state.likes}
-                        <div className="feed_back-remit"/><span id={this.remits}/>{this.state.remits}
-                        <div className="feed_back-comment"/><span id={this.commits}/>{this.state.commits}
+                        <div className="feed_back-like" id="like" onClick={this.clickForLike}/>
+                        {this.state.likes}
+                        <div className="feed_back-remit"/>
+                        <span id={this.remits}/>{this.state.remits}
+                        <div className="feed_back-comment"/>
+                        <span id={this.commits}/>{this.state.commits}
                     </div>
                 </div>
                 <div className="feed_body">
@@ -183,15 +217,17 @@ clickForLike = () => {
                         iure iusto libero perspiciatis, reiciendis unde velit.
                     </div>
                     <div className="feed_back">
-                        <div className="feed_back-like" id="like" onClick={this.clickForLike}/>{this.state.likes}
-                        <div className="feed_back-remit"/><span id={this.remits}/>{this.state.remits}
-                        <div className="feed_back-comment"/><span id={this.commits}/>{this.state.commits}
+                        <div className="feed_back-like" id="like" onClick={this.clickForLike}/>
+                        {this.state.likes}
+                        <div className="feed_back-remit"/>
+                        <span id={this.remits}/>{this.state.remits}
+                        <div className="feed_back-comment"/>
+                        <span id={this.commits}/>{this.state.commits}
                     </div>
                 </div>
             </div>
         )
     }
 }
-
 
 export default connect()(Feed)
