@@ -13,8 +13,8 @@
   }
 
   &_favor {
-    border: 3px solid black;
     padding: 10px;
+    border: 3px solid black;
     border-top: white;
     border-left: white;
   }
@@ -24,6 +24,7 @@
     border-right-color: whitesmoke;
     border-bottom-color: whitesmoke;
   }
+
   &_favor.active {
     border: 3px solid black;
     border-right-color: whitesmoke;
@@ -31,8 +32,8 @@
   }
 
   &_btn {
-    border: 3px solid black;
     padding: 10px;
+    border: 3px solid black;
     border-top: white;
     border-left: white;
   }
