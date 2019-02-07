@@ -4,13 +4,15 @@ import Header from "./components/Header/Header";
 import Messages from "./components/Messages/Messages";
 import Feed from "./components/Feed/Feed";
 import Notifications from "./components/Notifications/Notifications";
+import Profile from "./components/Profile/Profile";
 
 
 class App extends Component {
     state = {
         showedMessages: false,
-        showedNotifications: false
-    }
+        showedNotifications: false,
+        showedProfile: false
+    };
 
     showedToggle = () => {
         this.setState({
@@ -22,14 +24,21 @@ class App extends Component {
         this.setState({
             showedNotifications: !this.state.showedNotifications
         })
+}
+
+    showProfile = () => {
+        this.setState({
+            showedProfile: !this.state.showedProfile
+        })
     }
     render() {
         return (
 
             <div className="App">
-                <Header toggle={this.showedToggle} notif={this.showNot}/>
+                <Header toggle={this.showedToggle} notif={this.showNot} openProfile={this.showProfile}/>
                 {this.state.showedMessages && <Messages />}
                 {this.state.showedNotifications && <Notifications/>}
+                {this.state.showedProfile && <Profile/>}
                 <Feed/>
 
             </div>
